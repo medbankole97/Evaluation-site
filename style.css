@@ -50,54 +50,47 @@ color:#007bff;;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 2rem;
 } 
-/* hr{
-    color: black;
-    display: flex;
-    height: 2px;
-    position: absolute;
-    
-} */
-/* .navbar a:after{
+
+.navbar::after{
     content: "";
-    background: #0056b3;;
-    width: 0;
-    height: 3px;
+    width: 80%;
+    height: 2px;
+    background-color: #bcbc9e;
     position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 5px;
-    transition: .3s;
-
-} */
-/* .background-image{
-    background: url(images/illustrationss.png);
-    width: 600px;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 6px;
-    position: relative;
-
+    margin-top: 40px;
+    left: 50px;
+    margin-left: 100px;
 }
-.background-content{
-    position: absolute;
-    top: 50%;
+
+div.stats{
+    display: flex;
+    justify-content: space-evenly;  
+    width: 100%;
+    margin-top: 60px; 
+    
+}
+/* .stats button{
+    background-color: #007bff;
+
 } */
+
+
  #home {
     margin-top: 50px;
     display: flex;
     align-items: center;
     margin-left: 10%;
     margin-right: 10%;
-    height: calc(100vh - 50px);
+    /* height: calc(100vh - 50px); */
+    height: 100vh;
     justify-content: space-between;
 } 
 #home .left {
     width: 40%;
-    height: 100%;
+    /* height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
 }
 /* #home .left h4 {
     font-size: 20px;
@@ -114,7 +107,7 @@ color:#007bff;;
 #home .left button {
      margin-top: 20px;
      width: fit-content;
-     padding: 5px 10px;
+     padding: 12px 30px;
      background-color:#007bff;
      border: 0;
      transition: 0.5s;
@@ -125,6 +118,7 @@ color:#007bff;;
      justify-content: space-between;
      
 } 
+
 #home .left button  a {
     text-decoration: 0;
     color:#ffffff;
@@ -135,10 +129,7 @@ color:#007bff;;
     display: flex;
     justify-content: space-between;
 }
-div.stats{
-    display: flex;
-    justify-content: space-evenly;   
-}
+
 #home .right {
     width: 50%;
     height: 100%;
@@ -204,11 +195,11 @@ div.stats{
     
 }
 .box{
-    background-color: #bcbc9e;
+    background-color: #f8fafc;
     border-radius: 15px 15px 15px 15px;
-    width: 300px;
+    width: 370px;
     height: 500px;
-    margin: 50px;
+    margin: 20px;
     text-align: center;
     justify-content: space-around;
     }
@@ -248,8 +239,8 @@ div.text3{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #333;
-    width: 85%;
-    margin-left: 100px;
+    width: 80%;
+    /* margin-left: 10px; */
     
 }
 div.text-key{
@@ -262,7 +253,16 @@ div.text-key{
     margin-top: -10px;
 }
 .text2 span{
-    color:#FFD700
+    color:#FFD700;
+    font-size: 45px;
+    font-weight: bold;
+}
+.text2 p{
+    font-size: 45px;
+    font-weight: bold;
+}
+.text2 h3{
+    font-size: 30px;
 }
 .review .box-container .box .stars i{
     color:#ffffff;
@@ -440,9 +440,17 @@ div.text-key{
     
 }
 div.left-h{
-    background-color: #bcbc9e;
+    background: #f8fafc;
+    border: 1px solid rgba(82, 82, 91, 0.1);
+    border-radius: 16px;
+    padding: 30px 10px 30px 10px;
+    width: 40%;
 
 
+}
+.left-h p{
+    
+    line-height: 35px;
 }
 /* #homega .left-h button {
      margin-top: 20px;
@@ -527,7 +535,8 @@ div.left-h{
 .dishes .dish h2{
 color: #333;
 font-weight: 0;
-font-size: 10;
+font-size: 14px;
+
 }
 .dishes .dish a {
     margin-top: 10px;
@@ -611,7 +620,7 @@ width: 100%;
 }
 div.col h1{
     color: #333;
-    text-align: end;
+    margin-left: 150px;
     }
     /* div.col h2{
         color:#ffffff ;
@@ -629,22 +638,7 @@ div.col h1{
         padding: 15px;  
         /* Ajustez selon vos préférences */
       }
-/* .about .right button {
-    margin: 20px 0;
-    padding: 20px 60px;
-    background-color:#007bff;
-    border: 1px solid #ffffff;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-.about .right button a{
-    color: #fff;
-    text-decoration: 0;
-    
-} */
+
 /* med */
 .container {
     max-width: 400px;
@@ -703,7 +697,7 @@ div.col h1{
   input[type="submit"]:hover {
     background-color:#0056b3;
   }
-  #final{
+  .final{
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -714,7 +708,7 @@ div.col h1{
   }
   .newsletter-form {
     text-align: center;
-    background-color:#0056b3;
+    background-color:#216583;
     padding: 60px 0 ;
     border-radius: 20px;
     
@@ -729,6 +723,7 @@ div.col h1{
   .form-row {
     display: flex;
     justify-content: space-evenly;
+    
   }
   
   .form-row input[type="text"],
@@ -739,6 +734,7 @@ div.col h1{
     border-radius: 5px;
     background-color: #ccc;
     color: white;
+
   }
   
   .form-row input[type="submit"] {
@@ -815,3 +811,37 @@ color: #ffffff;
     text-decoration: 0;
     color: #ffffff;
   }
+  div.gauche img{
+    text-align: center;
+    /* padding: 48px 0px 104px 0px; */
+    background-color: #f8fafc;
+    border-radius: 0px 0px 100px 0px;
+    padding: 20px;
+    width: 45%;
+  }
+  .container-simp {
+    display: flex;
+
+    flex-wrap: wrap;
+    
+    
+  }
+  
+  .category {
+    margin: 10px;
+    display: flex;
+    width: 35%;
+    font-size: 9px;
+
+  }
+  .category img{
+    width: 30px;
+    height: 35px;
+  }
+  .category img h2{
+    margin: 30px;
+  }
+  /* .container-simp h1{
+    margin-left: 370px;
+    color: red;
+  } */
