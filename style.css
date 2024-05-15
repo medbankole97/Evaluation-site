@@ -97,38 +97,34 @@ div.stats{
     color: #27ae60;
 } */
 #home .left h1 {
+    /* font-size: 42px; */
+    font-weight: 700;
     font-size: 42px;
+    line-height: 1.38;
+    padding-bottom: 6px;
 }
 #home .left p {
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    color:#c0c0c0c0;
     
     
 }
-#home .left button {
-     margin-top: 20px;
-     width: fit-content;
-     padding: 12px 30px;
-     background-color:#007bff;
-     border: 0;
-     transition: 0.5s;
-     position: relative;
-     cursor: pointer;
-     border-radius: 8px;
-     display: flex;
-     justify-content: space-between;
-     
-} 
 
-#home .left button  a {
+
+#home .left  a {
     text-decoration: 0;
-    color:#ffffff;
+    /* color:#ffffff; */
     text-transform:none;
     transition: 0.5s;
-    background-color: #007bff;
+    /* background-color: #007bff; */
     
     display: flex;
     justify-content: space-between;
 }
+
 
 #home .right {
     width: 50%;
@@ -145,19 +141,24 @@ div.stats{
   #home .left span{
     color: #FFD700;;
   }
-  #home div.left a{
-    color: #ffffff;
-    padding: 6px 20px;
-    
-  }
-  #home div.left{
-    background-color: #ffffff;
-  }
+.get-started{
+    color: #F8FAFC;
+    background-color: #0056b3;
+    border-radius: 8px;
+    padding: 16px 48px;
+    font-size: 18px;
+}
+.Learn-more{
+    color: #333;
+    padding: 16px 48px;
+    border: 2px solid #bcbc9e;
+    border-radius: 8px;
+}
 
    #services{
     display: flex;
     justify-content: space-evenly;
-    background-color: #007bff;
+    background-color: #516eff;
     padding: 50px 10px;
   } 
   div.image {
@@ -168,6 +169,12 @@ div.stats{
     
   }
   #services h2{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  #services h4{
     color: #ffffff;
   }
   #services.image{
@@ -362,7 +369,7 @@ div.text-key{
     /* padding: 50px 10%; */
     /* width: 100%; */
     justify-content: center;
-    background-color: #007bff;
+    background-color: #516eff;
 }
 .about {
     display: flex;
@@ -387,21 +394,33 @@ div.text-key{
     font-size:35px;
     color: #ffffff;
     margin: 10px 0;
+    text-align: center;
 }
 .about .right p {
-    font-size: 10px ;
+    font-size: 15px ;
     color: #ffffff;
+    line-height: 20px;
+}
+.formi{
+    text-align: center;
 }
 .about .right button {
     margin: 20px 0;
     padding: 20px 60px;
-    background-color:#007bff;
+    background-color:#516eff;
     border: 1px solid #ffffff;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
+    margin-left: 250px;
+}
+.right span{
+   font-family:  'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
 }
 .about .right button a{
     color: #fff;
@@ -701,7 +720,7 @@ div.col h1{
     margin-top: 50px;
     display: flex;
     align-items: center;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     margin-right: 10%;
     height: calc(100vh - 50px);
     justify-content: space-between;
@@ -711,7 +730,8 @@ div.col h1{
     background-color:#216583;
     padding: 60px 0 ;
     border-radius: 20px;
-    
+    width: 80%;
+    margin-left: 200px;
   }
   
   .newsletter-form h2 {
@@ -845,3 +865,18 @@ color: #ffffff;
     margin-left: 370px;
     color: red;
   } */
+
+/* les 3 points */
+  .item-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item{
+    background-color: #ccc;
+    height: 10px;
+    border-radius: 100px;
+    width: 10px;
+    margin: 4px;
+    margin-top: 60px;
+  }
