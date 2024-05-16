@@ -29,7 +29,7 @@ section {
     background-color:#ffffff;;
     right: 0;
     left: 0;
-
+    margin-top:-50px;
 }
 .header #logo{
     width: 10%;
@@ -193,11 +193,11 @@ div.stats{
 } */
 .review .box-container{
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    align-items: flex-end;
-    gap: 50px;
-    padding: 10px;
-    margin-top: 100px;
+    grid-template-columns: repeat(3, 200px);
+    align-items: center;
+    gap: 2px;
+    /* padding: 10px; */
+    /* margin-top: 100px; */
     justify-content: space-evenly;
     
 }
@@ -495,12 +495,15 @@ div.left-h{
     justify-content: space-between;
 } */
 /* med */
+#menus{
+    background-color: rgba(0,0,0,0.05);
+}
 .menu {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(0,0,0,0.05);
+    /* background-color: rgba(0,0,0,0.05); */
     padding: 50px 10px;
 }
 .mini_title{
@@ -624,18 +627,37 @@ color: #333;
     font-size: 20px ;
     color: #F8FAFC;
 }
+
 #doctor{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-
-
+    align-items: center; */
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.doctor .docteur{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+.doctor .docteur .gauche{
+    background-color: #007bff;
+    width: 40%;
+    padding: 40px;
+}
+.doctor .docteur .gauche img{
+    width: 100%;
 }
 .gauche{
  display: flex;
 /* align-items: flex-end;
 justify-content: flex-end; */
 width: 100%;
+}
+.doctor .docteur .col{
+    margin-left: 200px;
 }
 div.col h1{
     color: #333;
