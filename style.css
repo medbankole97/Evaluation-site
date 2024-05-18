@@ -12,7 +12,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;; 
+ font-family: 'Inter', sans-serif;
+
 } 
 
 section {
@@ -24,10 +25,10 @@ section {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background-color:#F8FAFC;
+    background-color:#ffffff;
     right: 0;
     left: 0;
-    margin-top:-50px;
+    margin-top:-100px;
 }
 .header #logo{
     width: 10%;
@@ -51,96 +52,82 @@ color:#007bff;;
 
 .navbar::after{
     content: "";
-    width: 80%;
+    width: 86%;
     height: 2px;
-    background-color: #bcbc9e;
+    background-color: #ccc;
     position: absolute;
-    margin-top: 40px;
-    left: 50px;
+    margin-top: 48px;
+    left: 3px;
     margin-left: 100px;
+  
 }
 
-#home div.stats{
-    display: flex;
-    justify-content: space-between;  
-    width: 100%;
-    margin-top: 60px; 
-    
-}
+
 /* section home */
-#home .principal{
-   
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 400px 30px 0;
+
+#home {
     margin-top: 100px;
-}
- #home {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-} 
-#home .left {
-    width: 40%;
-    margin-top: 50px;
-   
+    align-items: center;
+}
+#home .principal {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#home .left h1 {
+    font-size: 50px;
+    
+
+}
+button:hover,input[type="submit"]:hover {
+    cursor: pointer;
 }
 
-#home .left h1 {
-   
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 1.38;
-    padding-bottom: 6px;
+span {
+    color: #FFD700;
 }
+
 #home .left p {
-    
-    font-weight: 400;
+    color: #777777;
     font-size: 20px;
-    line-height: 1.7;
-    color:#777777;   
+    margin-bottom: 50px;
+    margin-top: 50px;
+    line-height: 2;
 }
-#home .left  a {
-    text-decoration: 0;
-    text-transform:none;
-    transition: 0.5s; 
+
+#home .stats {
     display: flex;
     justify-content: space-between;
+    margin: 20px 100px 30px 0;
+    margin-top: -50px;
 }
-#home .right {
-    width: 50%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#home .img-rigth {
+    width: 500px;
+    height: 450px;
 }
-#home .right img {
-    width: 100%;
-    animation: animate 2s linear;
-    transition: 0.5s;
-    margin-left: 600px;
-  }
-#home .left span{
-    color: #FFD700;;
-  }
-.get-started{
-    color: #F8FAFC;
-    background-color: #0056b3;
-    border-radius: 8px;
-    padding: 16px 48px;
+#home .stats button {
+    margin-top: 50px;
+    padding: 15px 50px;
+    font-weight: bold;
     font-size: 18px;
 }
-.Learn-more{
-    color: #333;
-    padding: 16px 48px;
-    border: 2px solid #bcbc9e;
-    border-radius: 8px;
+#home .get-started {
+    background-color: #516eff;
+    border-radius: 5px;
+    border: 1px solid #777777 ; 
+    color: #F8FAFC;
 }
-
+#home .Learn-more {
+    color:#333;
+    border-radius: 5px;
+    border: 2px solid #bcbc9e;
+}
 /* service  */
 
-#services .div-blue {
+#services .servs {
     display: flex;
     width: 100%;
     padding: 20px 15px;
@@ -286,8 +273,17 @@ color:#007bff;;
     line-height: 22px;
 }
 
+.h4-mod{
+    margin-top: 20px;
+}
+.p-mod{
+    margin-top: 0px;
+}
+.img-mod{
+    margin-top:20px ;
+}
 /* Code CSS de la section */
-#history {
+#Live-history {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,7 +351,7 @@ color:#007bff;;
     margin-top: -35px;
 
 }
-#history .or-history {
+#Live-history .history {
     width: 90%;
     height: auto;
     display: flex;
@@ -363,12 +359,12 @@ color:#007bff;;
     margin-top: 30px;
   
 }
-#history .or-history img {
+#Live-history .history img {
     width: 450px;
     margin-top: 50px;  
     padding-right: 50px;
 }
-#history .or-history div {
+#Live-history .history div {
     width: 500px;
     padding: 40px;
     margin-left: 50px;
@@ -382,7 +378,7 @@ color:#007bff;;
     line-height: 25px;
     font-size: 14px;
 }
-#history .or-history div h2 {
+#Live-history .history div h2 {
     margin-bottom: 20px;
 }
 
@@ -430,24 +426,27 @@ color:#007bff;;
     font-weight: 600;
     font-size: 48px;
     line-height: 64px;
+    color: #ffffff;
 }
 .about .right button a{
     color: #fff;
     text-decoration: 0;
+    cursor: pointer;
     
 }
 
 /* doctors */
 
-#meet-doctor {
+#docteur{
     margin-top: 10px;
     display: flex;
     background-color: #F8FAFC;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-top: 70px;
 }
-#meet-doctor .meet {
+#docteur .meet {
     width: 90%;
     margin-top: 1%;
     display: flex;
@@ -456,30 +455,30 @@ color:#007bff;;
     margin-top: 50px;
     margin-bottom: 20px;
 }
-#meet-doctor .meet div {
+#docteur .meet div {
     display: flex;
     justify-content: space-between;
     font-size: 30px;
 }
-#meet-doctor .meet hr {
+#docteur .meet hr {
     margin-left: 150px;
     margin-top: -20px;
 }
-#meet-doctor .meet h1 {
+#docteur .meet h1 {
     font-size: 30px;
 }
-#meet-doctor .meet h3 {
+#docteur .meet h3 {
     font-size: 40px;
     margin-top: -20px;
 }
-#meet-doctor .doctors {
+#docteur .doctors {
     display: flex;
     margin-top: 20px;
     justify-content: center;
     align-items: center; 
     margin-right: 20px;
 }
-#meet-doctor .doctors div {
+#docteur .doctors div {
     margin: 50px;
     color: #777777;
     display: flex;
@@ -489,17 +488,17 @@ color:#007bff;;
     font-size: 15px;
     line-height: 20px;
 }
-#meet-doctor .doctors div img {
+#docteur .doctors div img {
     width: 180px;
 }
-#meet-doctor .doctors div h2 {
+#docteur .doctors div h2 {
     margin-top: 20px;
     margin-bottom: 5px;
     font-size: 16px;
     color: black;
     font-weight: normal;
 }
-#meet-doctor .doctors div button {
+#docteur .doctors div button {
     width: 120px;
     padding:  5px 20px;
     margin-top: 15px;
@@ -508,6 +507,7 @@ color:#007bff;;
     border-radius: 5px;
     border-color: var(--primary);
     border-style: solid;
+    cursor: pointer;
 }
 
 .section-blue .div-right {
@@ -552,7 +552,7 @@ color:#007bff;;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #007bff;
+    background-color: #516eff;
 }
 .about-h {
     display: flex;
@@ -599,7 +599,7 @@ color: #333;
   }
 
   
-#register {
+#renseigner {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -607,18 +607,18 @@ color: #333;
     justify-content: center;
     margin: auto;
 }
-#register .contener {
+#renseigner .contener {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
     padding: 50px;
 }
-#register .contener img {
+#renseigner .contener img {
     width: 400px;
     margin-left: -70px;
 }
-#register .contener form {
+#renseigner .contener form {
     display: grid;
     grid-template-columns: repeat(2,auto);
     grid-template-rows: repeat(8,auto);
@@ -627,12 +627,12 @@ color: #333;
     margin-left: 20px;
     color: var(--muted);
 }
-#register .contener form label{
+#renseigner .contener form label{
     font-size: 15px;
     margin: 15px 0 2px 5px;
 
 }
-#register .contener form :is(input, select) {
+#renseigner .contener form :is(input, select) {
     width: 250px;
     border-radius: 5px;
     padding: 10px;
@@ -641,7 +641,7 @@ color: #333;
     background-color: transparent;
     color: var(--muted);
 }
-#register .contener form textarea {
+#renseigner .contener form textarea {
     grid-column: 1/3;
     height: 100px;
     max-height: 100px;
@@ -653,12 +653,12 @@ color: #333;
     padding: 10px;
 
 }
-#register .contener form div {
+#renseigner .contener form div {
     display: flex;
     justify-content: center;
     position: relative;
 }
-#register .contener form div select {
+#renseigner .contener form div select {
     position: absolute;
     bottom: 10px;
     width: 50px;
@@ -666,12 +666,12 @@ color: #333;
     left: 20px;
     padding: 0;
     background-color: transparent;
-}#register .contener form div input {
+}#renseigner .contener form div input {
     padding-left: 70px;
     
 } 
 
- #register .contener form .div-checkbox {
+ #renseigner .contener form .div-checkbox {
     padding: 15px;
     margin: 10px 0 10px 0 ;
     grid-column: 1/3;
@@ -680,23 +680,24 @@ color: #333;
     display: flex;
     justify-content: start;
 }
-#register .contener form .div-checkbox :is(input,label){
+#renseigner .contener form .div-checkbox :is(input,label){
     width: auto;
     margin: 5px 0 5px 0;
     padding: 5px  0 5px 0; 
 }
-#register .contener form .div-checkbox label {
+#renseigner .contener form .div-checkbox label {
     padding-left: 5px;
 }
- #register .contener form .div-checkbox {
+ #renseigner .contener form .div-checkbox {
      margin-left: -15px;
 } 
-#register .contener form input[type="submit"] {
+#renseigner .contener form input[type="submit"] {
     grid-column: 1/3;
     width: 100%;
-    background-color: var(--primary);
+    background-color: #516eff;;
     color: var(--white);
     font-size: 15px;
+    cursor: pointer;
 }
 
 
@@ -748,18 +749,26 @@ color: #333;
     background-color: var(--whiteBG);
     border-radius: 10px;
     padding: 15px 50px 15px 50px;
+    cursor: pointer;
 }
+
 
 #content{
     background-color: #516eff;
-    padding: 150px 0;
+    padding: 90px 0;
     margin-top: 70px;
     width: 111%;
+    display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
+    
 
 }
+#content .contents{
+    width: 90%;
+}
+
 div.columns img{
     filter: invert(100%); /* Inverser les couleurs pour changer le noir en blanc */
     filter: brightness(1500%);
@@ -781,7 +790,7 @@ color: #ffffff;
   
   .sans-bordure td {
     border: none;
-    padding: 10px; /* Ajustez selon vos préférences */
+    padding: 10px; /* Ajustez selon vos prÃ©fÃ©rences */
   }
 .contents {
     display: flex;
@@ -796,8 +805,9 @@ color: #ffffff;
 }
 
 .columns:last-child {
-    border-right: none; /* enlever le trait vertical de la dernière colonne */
+    border-right: none; /* enlever le trait vertical de la derniÃ¨re colonne */
 }
+
 
 footer{
     background-color: #216583;
@@ -825,3 +835,6 @@ footer{
   .appoint{
     color: #FFD700;
   }
+  /* button{
+    cursor: pointer;
+  } */
